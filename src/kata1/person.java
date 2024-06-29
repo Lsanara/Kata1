@@ -23,6 +23,12 @@ public class person {
         Period period = Period.between(birthday,today);
         return(period.getYears());
     }
-
+    @Override
+    public String toString() {
+        return "person{" +
+                "name='" + name + '\'' +
+                ", birthday=" + birthday +
+                '}';
+    }
 
 }
