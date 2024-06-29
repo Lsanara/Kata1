@@ -11,5 +11,18 @@ public class person {
         this.name = name;
         this.birthday = birthday;
     }
+    public String getName() {
+        return name;
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+    public int getAge(){
+        LocalDate today = LocalDate.now();
+        Period period = Period.between(birthday,today);
+        return(period.getYears());
+    }
+
 
 }
